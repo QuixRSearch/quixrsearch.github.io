@@ -34,26 +34,25 @@
 </head>
 
 <body>
+	<div class="container center" style="margin-top: 15%;">
+		<h1 style="font-size: 4.5em;">QuixR</h1>
+		<input type="search" name="search" id="search" placeholder="Search" onkeyup="checkkey()" style="width: 70%">
+		<input type="submit" value="Submit" onclick="search()">
+		<div class="row">
+			<a href="https://scratch.mit.edu"><button class="button-primary">Scratch</button></a>
+			<a href="https://scratch.mit.edu/discuss"><button class="button-primary">Discuss</button></a>
+			<a href="https://scratch.mit.edu/discuss/31"><button class="button-primary">Advanced Topics</button></a>
+			<a href="https://github.com"><button class="button-primary">GitHub</button></a>
+			<a href="https://repl.it"><button class="button-primary">Replit</button></a>
+			<a href="https://github.com/QuixRSearch/quixrsearch.github.io"><button class="button-primary">QuixR Repo</button></a>
+		</div>
+	</div>
 
-    <!-- Primary Page Layout
-	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container center" style="margin-top: 15%;">
-        <h1>QuixR</h1>
-        <input type="search" name="search" id="search" placeholder="Search" style="width: 35%">
-        <input type="submit" value="Submit" onclick="search()">
-        <div class="row">
-            <a href="https://scratch.mit.edu"><button>Scratch</button></a>
-            <a href="https://scratch.mit.edu/discuss"><button>Discuss</button></a>
-            <a href="https://scratch.mit.edu/discuss/31"><button>Advanced Topics</button></a>
-            <a href="https://github.com"><button>GitHub</button></a>
-            <a href="https://repl.it"><button>Replit</button></a>
-        </div>
-        <a href="https://github.com/QuixRSearch/quixrsearch.github.io"><button>QuixR Repo</button></a>
-    </div>
-
-    <!-- End Document
+	<!-- End Document
 	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="./js/listeners.js"></script>
+	  <script src="/js/facts.js"></script>
+	  <script src="/js/background.js"></script>
 </body>
 
 </html>
