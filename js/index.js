@@ -1,9 +1,12 @@
+
+var google = "https://www.google.com/search?q=";
+var ddg = "https://duckduckgo.com/?q=";
+var eng = google;
+
 function search() {
-    var engine = document.getElementById("engine").value;
+    var engine = document.getElementById("engine").innerHTML;
     var search = document.getElementById("search").value;
-    var google = "https://www.google.com/search?q=";
-    var ddg = "https://duckduckgo.com/?q=";
-    var eng;
+    eng = google;
     if (engine == "Google") {
         eng = google;
     } else {
@@ -21,10 +24,18 @@ function search() {
 }
 
 function switchEngine() {
+    console.log("engine clicked");
     var engine = document.getElementById("engine").value;
-    if engine == "Google" {
+    if (eng == google) {
+        eng = ddg;
         engine = "DuckDuckGo";
-    } else {
+    } else if (eng == ddg) {
+        eng = google;
         engine = "Google";
     }
+    console.log(engine);
+    // if the eng variable is set to google, set the engine variable to google
+    // if the eng variable is set to ddg, set the engine variable to ddg
+    document.getElementById("engine").innerHTML = engine;
+
 }
